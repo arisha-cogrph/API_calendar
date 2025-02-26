@@ -8,7 +8,8 @@ const message = document.getElementById("message")
 const messageDate = document.getElementById("message-date")
 //finish declaration
 
-
+//this is to declare these variable (to store them) for current date.
+//they are empty variables because the need to be adjusted to what the API data is fetching
 let day = "";
 let month = "";
 let year = "";
