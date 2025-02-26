@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    /*vh is view height and vw is view width. this is used when you want to use the whole screen*/
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #eeeee4);
+    /*used to create a reflection element. It is a Web-kit specific property which means it mainly works in browsers like
+    chrome and safari etc*/
+}
+
+.container .year {
+    background-color: #154c79;
+    padding: 5px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.month {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.day-minus {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.day-plus {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.day-minus:hover {
+    transform: scale(1.5);
+}
+
+.day-plus:hover {
+    transform: scale(1.5);
+}
+
+.message {
+    padding: 10px;
+}
+
+.day {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8rem;
+    padding: 10px;
+}
